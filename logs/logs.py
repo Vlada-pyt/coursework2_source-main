@@ -1,0 +1,6 @@
+logger_one = logging.getLogger("one")
+file_handler = logging.FileHandler("ap.log")
+formatter_one = logging.Formatter("%(asctime)s : [%(levelname)s] : %(message)s")
+file_handler.setFormatter(formatter_one)
+logger_one.addHandler(file_handler)
+logger_one.info("Выполняю вывод всех постов")
