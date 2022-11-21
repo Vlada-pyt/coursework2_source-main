@@ -29,6 +29,6 @@ def get_json_post(post_id):
     return jsonify(post)
 
 
-if __name__ == "__main__":
 
-        app.run()
+
+app.run()
